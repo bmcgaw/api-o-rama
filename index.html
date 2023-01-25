@@ -7,29 +7,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>API-O-RAMA</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 
-<body id="index1body">
-    <h1 id="apiRama">API-O-RAMA</h1>
+<body id="index_1_body">
+    <div id="index_1_header">
+        <div id="clock">12:46 PM CST</div>
+        <h1 id="apiRamaHead">API-O-RAMA</h1>
+        <div id="bibleVerse"></div>
+    </div>
 
     <div id="weather">
+        <h3 id="weatherHead">Weather</h3>
         <input id="inputWeather" type="text" placeholder="search city or zipcode">
-        <button id="getWeather">sun</button>
-        <div id="city"></div>
-        <div id="temp"></div>
-        <div id="humidity"></div>
-        <div id="clouds"></div>
-        <img id="icon" src="" alt="">
-        <div id="wind"></div>
+        <button id="getWeather"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
+                stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em"
+                xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg></button>
+        <div id="weatherData">
+            <div id="city"></div>
+            <div id="temp"></div>
+            <div id="humidity"></div>
+            <div id="clouds"></div>
+            <img id="icon" src="" alt="">
+            <div id="wind"></div>
+        </div>
     </div>
 
     <div id="index1buttons">
-        <button id="findShow">Find a good TV show</button>
-        <button id="countries">Learn about another country</button>
-        <button id="spoon">Find yummy food</button>
-        <button id="jerry">Jerry</button>
-        <button id="elaine">Elaine</button>
-        <button id="george">George</button>
+        <button class="api_btns" id="findShow">Search TV Shows</button>
+        <button class="api_btns" id="countries">Explore Countries</button>
+        <button class="api_btns" id="spoon">Search Recipes</button>
+        <button class="api_btns" id="pokemon">Pokemon</button>
+        <button class="api_btns" id="elaine">Get A Seinfeld Quote</button>
     </div>
 
     <script src="index.js"></script>

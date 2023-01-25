@@ -5,19 +5,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
+    <title>Countries Of The World</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Gothic+A1:wght@500&family=Open+Sans&display=swap"
+        rel="stylesheet">
 </head>
 
-<body>
-    <div>
-        <h1>API #2</h1>
-        <input name="countrySearch" type="text" id="countrySearch">
-        <button id="searchCountry">We've gone country!</button>
+<body id="index3body">
+    <div id="wrapper">
         <div id="countryDiv">
-            <img id="flagImage" src="" alt="">
+            <h1 id="index3header">Countries Of The World</h1>
+            <div id="countryInputAndSearch">
+                <input name="countrySearch" type="text" id="countrySearch">
+                <button id="searchCountry">Search</button>
+            </div>
             <div id="countryInfo">
+                <div class="countryFacts" id="name"></div>
+                <div class="countryFacts" id="capital"></div>
+                <div class="countryFacts" id="population"></div>
+                <div class="countryFacts" id="language"></div>
+                <a class="countryFacts" id="map" href=""></a>
             </div>
         </div>
+    </div>
+
+    <div class="custom-shape-divider-bottom-1673562969">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path
+                d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+                class="shape-fill"></path>
+        </svg>
     </div>
     <script src="index.js"></script>
 </body>
